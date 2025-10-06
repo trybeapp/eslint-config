@@ -4,7 +4,9 @@
   "main": "index.js",
   "private": true,
   "type": "module",
-  "peerDependencies": {},
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
   "dependencies": {
     "@eslint/js": "^9.36.0",
     "@stylistic/eslint-plugin": "^5.4.0",
@@ -23,7 +25,5 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.45.0"
   },
-  "devDependencies": {
-    "eslint": "^9.36.0"
-  }
+  "devDependencies": {}
 }

@@ -1,6 +1,6 @@
 {
   "name": "@trybeapp/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "private": true,
   "type": "module",
@@ -26,6 +26,7 @@
     "eslint-plugin-unicorn": "^61.0.2",
     "eslint-plugin-yml": "^1.19.0",
     "globals": "^16.4.0",
+    "import-sync": "^2.2.3",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.45.0"
   },

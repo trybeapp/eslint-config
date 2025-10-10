@@ -12,6 +12,7 @@ import regexpPlugin from 'eslint-plugin-regexp'
 import unicornPlugin from 'eslint-plugin-unicorn'
 import yamlPlugin from 'eslint-plugin-yml'
 import globals from 'globals'
+import importSync from 'import-sync'
 import tseslint from 'typescript-eslint'
 
 export default class Config {
@@ -142,7 +143,7 @@ export default class Config {
   withTailwind() {
     this._builtConfig = [
       ...this._builtConfig,
-      ...require('eslint-plugin-tailwindcss').configs['flat/recommended'],
+      ...importSync('eslint-plugin-tailwindcss').configs['flat/recommended'],
     ]
     return this
   }

@@ -294,6 +294,11 @@
     "@eslint/core" "^0.16.0"
     levn "^0.4.1"
 
+"@httptoolkit/esm@^3.3.1":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@httptoolkit/esm/-/esm-3.3.2.tgz#cd0ec1ff0539a8a82da98ab193e3f0bf3a6727d0"
+  integrity sha512-mpB6FdMtn+c17RA6b6PDdsJXBLHG4P8ZJFK7sjS4IZn689kcOwjt90Ct+oxTaYo9pvCSb/GeTSjYEzoBv+bnbQ==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/@humanfs/core/-/core-0.19.1.tgz#17c55ca7d426733fe3c561906b8173c336b40a77"
@@ -1621,6 +1626,13 @@ import-fresh@^3.2.1:
   dependencies:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
+
+import-sync@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/import-sync/-/import-sync-2.2.3.tgz#09602878c91703e8b4ab2da293d917a739b1d7af"
+  integrity sha512-ZnF84+eGjetsXwYEuFZADO4eCYr1ngBo6UK476Oq4q6dkiDM1TN+6D5iQ5/e3erCyjo7O6xT3xHE6xdtCgDYhw==
+  dependencies:
+    "@httptoolkit/esm" "^3.3.1"
 
 imurmurhash@^0.1.4:
   version "0.1.4"

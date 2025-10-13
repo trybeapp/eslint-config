@@ -96,8 +96,9 @@ export default class Config {
           },
         }],
         'object-property-newline': [2],
-        'react/react-in-jsx-scope': [0], // Not needed with a bundler
         'unicorn/filename-case': [0], // Some files are PascalCase, we're happy with this
+        '@stylistic/jsx-max-props-per-line': [2],
+        '@stylistic/quote-props': [2, 'as-needed'],
       },
     },
   ]
@@ -125,7 +126,10 @@ export default class Config {
         plugins: {
           react: reactPlugin,
         },
-        rules: reactPlugin.configs.recommended.rules,
+        rules: {
+          ...reactPlugin.configs.recommended.rules,
+          'react/react-in-jsx-scope': [0],
+        },
         settings: {
           react: {
             version: 'detect',
